@@ -1,0 +1,17 @@
+Python program to use psutil and implement a network socket monitoring tool that can check how many TCP sockets are being created by a web application.
+
+Requirements
+ 
+1. Create a Python script called socket-mon.py.
+2. List all processes that have any socket connections (meaning the laddr and raddr fields exist).
+3. Group by the PID and sort the output by the number of the connections per process.
+
+Output in CSV format on Terminal
+
+$ python socket-mon.py (or $ sudo python socket-mon.py)
+"pid","laddr","raddr","status"
+"1234","10.0.0.1@48776","93.186.135.91@80","ESTABLISHED"
+"1234","10.0.0.1@48777","93.186.135.91@80","ESTABLISHED"
+"5678","10.0.0.1@48779","193.286.35.91@8000","CLOSING"
+
+A new file is created named "SocketConnections" with the output.
