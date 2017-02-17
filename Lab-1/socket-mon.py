@@ -73,7 +73,5 @@ def PrintAllConnections(SortedGroupedConnections):
         connectionentry = SortedGroupedConnections[connection].PrintConnections()
         outputfile.write(connectionentry)
 
-
-SocketConnections = GetConnections()
 SortedGroupedConnections = GroupAndSortConnections(GetConnections())
 PrintAllConnections(SortedGroupedConnections)
