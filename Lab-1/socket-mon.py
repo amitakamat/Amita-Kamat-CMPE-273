@@ -63,7 +63,7 @@ def PrintAllConnections(SortedGroupedConnections):
     """
         Prints the connection details in csv format on terminal and in an output file.
     """
-    outputfile = open('SocketConnections', 'wb')
+    outputfile = open('SocketConnections', 'w')
 
     headerline = '\n"pid", "laddr", "raddr", "status"'
     print(headerline)
